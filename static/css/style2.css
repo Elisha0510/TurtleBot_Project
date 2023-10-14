@@ -1,0 +1,468 @@
+  
+  * {
+    font-family: serif;
+  }
+  
+  #head {
+    border-bottom: 0.5px solid #000000;
+    width: 2000px;
+    height: 140px;
+    font-size:1.2em ;
+  }
+  #table{
+    width:100%;
+    height : 500px;
+  }
+  #td{
+    border-right : 1px solid #AAAAAA;
+    border-bottom : 1px solid #AAAAAA;
+  }
+  #td_6{
+    border-right : 1px solid #AAAAAA;
+    border-bottom : 1px solid #AAAAAA;
+    background-color: #2D2D2D;
+  }
+  #leftnull{
+    float: left;
+    width: 1%;
+  }
+  #rightnull{
+    float: left;
+    width: 3%;
+  }
+  #left {
+    float: left;
+    width: 29%;
+  }
+  #mapimg_1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 62.5%;
+    left: 27%;
+  }
+  #mapimg_2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 53.5%;
+    left: 27%;
+  }
+  #mapimg_3{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 45%;
+    left: 27%;
+  }
+  #mapimg_4{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 36%;
+    left: 27%;
+  }
+  #mapimg_5{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 26.5%;
+    left: 27%;
+  }
+  #mapimg_6{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 18%;
+    left: 27%;
+  }
+  
+  
+  #righthead1{
+    width :8%;
+    height :10%;
+    font-size:4em;
+    font-weight:bold;
+    position: absolute;
+    top: 12%;
+    left: 32%;
+  }
+  #righthead2{
+    width :20%;
+    height : 10%;
+    font-size:1.5em;
+    font-weight:bold;
+    position: absolute;
+    top: 11.5%;
+    left: 37%;
+  }
+  #map_b{
+    float:right;
+    border:1px solid #AAAAAA;
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: absolute;
+    top: 21%;
+    left: 85%;
+    font-size:1.1em;
+
+  }
+  #right {
+    float: left;
+    width: 70%;
+  }
+  #floor{
+    font-size :1.2em;
+  }
+  #floor_6{
+    font-size :1.2em;
+    color : white;
+  }
+  #ti1{
+    font-weight:bold;
+    font-size:1.2em;
+  }
+  #t1{
+    border-top : 1px solid black;
+
+  }
+  #td1{
+    background-color: #BBBBBB;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top :15px;
+    padding-bottom :15px;
+    padding-right:281px;
+    padding-left :281px;
+  }
+  #td2{
+    background-color: #BBBBBB;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top :23px;
+    padding-bottom :25px;
+    padding-right:281px;
+    padding-left :284px;
+  }
+  #td3{
+    background-color: #BBBBBB;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top :23px;
+    padding-bottom :25px;
+    padding-right:281px;
+    padding-left :284px;
+  }
+  #tdnull{
+    background-color: #BBBBBB;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top :5px;
+    padding-bottom :5px;
+    padding-right:290px;
+    padding-left :300px;
+  }
+  #div_1{
+    width:60%;
+    position: absolute;
+    top: 32%;
+    left:32%
+  }
+  #div_2{
+    width:60%;
+    border-bottom:1px solid black;
+    position: absolute;
+    top: 45%;
+    left:32%;
+  }
+  #div_3{
+    width:60%;
+    position: absolute;
+    top: 50%;
+    left:32%;
+  }
+  #div_4{
+    width:60%;
+    position: absolute;
+    top: 55.5%;
+    left:32%;
+  }
+  #div_5{
+    width:60%;
+    position: absolute;
+    top: 61%;
+    left:32%;
+  }
+  #div_6{
+    width:60%;
+    border-bottom:1px solid black;
+    position: absolute;
+    top: 70%;
+    left:32%;
+  }
+  #div_7{
+    width:60%;
+    position: absolute;
+    top: 75%;
+    left:32%;
+  }
+  #div_8{
+    width:60%;
+    position: absolute;
+    top: 80.5%;
+    left:32%;
+  }
+  #div_9{
+    width:60%;
+    position: absolute;
+    top: 86%;
+    left:32%;
+  }
+  #div_10{
+    width:60%;
+    border-bottom:1px solid black;
+    position: absolute;
+    top: 95%;
+    left:32%;
+  }
+  #div_11{
+    width:60%;
+    position: absolute;
+    top: 100%;
+    left:32%;
+  }
+  #div_12{
+    width:60%;
+    position: absolute;
+    top: 105.5%;
+    left:32%;
+  }
+  #div_13{
+    width:60%;
+    position: absolute;
+    top: 111%;
+    left:32%;
+  }
+  #roomnum1{
+    font-weight :bold;
+    position: absolute;
+    top: 54%;
+    left:3%;
+  }
+  #roomname1{ 
+    position: absolute;
+    top: 54%;
+    left:38%;
+  }
+  #roomnum2{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname2{
+    position: absolute;
+    top: 21%;
+    left:38%;
+    z-index: 1;
+  }
+  #roomnum3{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:52%;
+    z-index: 1;
+  }
+  #roomname3{
+    position: absolute;
+    top: 21%;
+    left:87%;
+    z-index: 1;
+  }
+  #roomnum4{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname4{
+    position: absolute;
+    top: 21%;
+    left:38%;
+    z-index: 1;
+  }
+  #roomnum5{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:52%;
+    z-index: 1;
+  }
+  #roomname5{
+    position: absolute;
+    top: 21%;
+    left:87%;
+    z-index: 1;
+  }
+  #roomnum6{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname6{
+    position: absolute;
+    top: 21%;
+    left:38%;
+    z-index: 1;
+  }
+  #roomnum7{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:52%;
+    z-index: 1;
+  }
+  #roomname7{
+    position: absolute;
+    top: 21%;
+    left:87%;
+    z-index: 1;
+  }
+  #roomnum8{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname8{
+    position: absolute;
+    top: 21%;
+    left:38%;
+    z-index: 1;
+  }
+  #roomnum9{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:53%;
+    z-index: 1;
+  }
+  #roomname9{
+    position: absolute;
+    top: 21%;
+    left:92%;
+    z-index: 1;
+  }
+  #roomnum10{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname10{
+    position: absolute;
+    top: 21%;
+    left:43%;
+    z-index: 1;
+  }
+  #roomnum11{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:53%;
+    z-index: 1;
+  }
+  #roomname11{
+    position: absolute;
+    top: 21%;
+    left:82%;
+    z-index: 1;
+  }
+  #roomnum12{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname12{
+    position: absolute;
+    top: 21%;
+    left:34%;
+    z-index: 1;
+  }
+  #roomnum13{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:53%;
+    z-index: 1;
+  }
+  #roomname13{
+    position: absolute;
+    top: 21%;
+    left:88.5%;
+    z-index: 1;
+  }
+  #roomnum14{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomnum15{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:53%;
+    z-index: 1;
+  }
+  #roomname15{
+    position: absolute;
+    top: 21%;
+    left:92%;
+    z-index: 1;
+  }
+  #roomnum16{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomnum17{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:53%;
+    z-index: 1;
+  }
+  #roomnum18{
+    font-weight :bold;
+    position: absolute;
+    top: 21%;
+    left:3%;
+    z-index: 1;
+  }
+  #roomname18{
+    position: absolute;
+    top: 21%;
+    left:43%;
+    z-index: 1;
+  }
+
+  

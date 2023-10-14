@@ -1,0 +1,206 @@
+#map {
+    position: relative;
+    width: 70%;
+    height: 80%;
+  }
+  
+  .button {
+    width: 70px;
+    height: 150px;
+    border: none;
+    opacity: 0.3;
+  }
+  
+  .button:hover {
+    background-color: #87ceeb;
+    opacity: 0.5;
+  }
+  
+  .button1 {
+    width: 150px;
+    height: 70px;
+    border: none;
+    opacity: 0.3;
+  }
+  
+  .button1:hover {
+    background-color: #87ceeb;
+    opacity: 0.5;
+  }
+  
+  #M610 {
+    position: absolute;
+    top: 23px;
+    left: 5px;
+  }
+  
+  #office {
+    position: absolute;
+    top: 247px;
+    left: 5px;
+  }
+  
+  #ele {
+    position: absolute;
+    top: 597px;
+    left: 5px;
+  }
+  
+  #his {
+    position: absolute;
+    top: 770px;
+    left: 10px;
+    bottom: 2.5px;
+  }
+  
+  #lsj {
+    position: absolute;
+    top: 770px;
+    left: 425px;
+    bottom: 2.5px;
+  }
+  
+  #nam {
+    position: absolute;
+    top: 770px;
+    left: 900px;
+    bottom: 2.5px;
+  }
+  
+  #M618 {
+    position: absolute;
+    top: 23px;
+    left: 1406px;
+  }
+  
+  #M619 {
+    position: absolute;
+    top: 300px;
+    left: 1406px;
+  }
+  
+  #M620 {
+    position: absolute;
+    top: 550px;
+    left: 1406px;
+  }
+  
+  .path {
+    border-radius: 100%;
+    border: none;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .path:hover {
+    background-color: #87ceeb;
+    opacity: 0.5;
+  }
+  
+  #n_1 {
+    position: absolute;
+    top: 150px;
+    left: 382px;
+  }
+  
+  #n_2 {
+    position: absolute;
+    top: 150px;
+    left: 599px;
+  }
+  
+  #n_3 {
+    position: absolute;
+    top: 150px;
+    left: 816px;
+  }
+  
+  #n_4 {
+    position: absolute;
+    top: 150px;
+    left: 1033px;
+  }
+  
+  #n_11 {
+    position: absolute;
+    top: 635px;
+    left: 382px;
+  }
+  
+  #n_10 {
+    position: absolute;
+    top: 635px;
+    left: 599px;
+  }
+  
+  #n_9 {
+    position: absolute;
+    top: 635px;
+    left: 816px;
+  }
+  
+  #n_8 {
+    position: absolute;
+    top: 635px;
+    left: 1033px;
+  }
+  
+  #n_14 {
+    position: absolute;
+    top: 271px;
+    left: 165px;
+  }
+  
+  #n_13 {
+    position: absolute;
+    top: 392px;
+    left: 165px;
+  }
+  
+  #n_12 {
+    position: absolute;
+    top: 531px;
+    left: 165px;
+  }
+  
+  #n_5 {
+    position: absolute;
+    top: 271px;
+    left: 1250px;
+  }
+  
+  #n_6 {
+    position: absolute;
+    top: 392px;
+    left: 1250px;
+  }
+  
+  #n_7 {
+    position: absolute;
+    top: 531px;
+    left: 1250px;
+  }
+  
+  #n_401 {
+    position: absolute;
+    top: 150px;
+    left: 165px;
+  }
+  
+  #n_102 {
+    position: absolute;
+    top: 150px;
+    left: 1250px;
+  }
+  
+  #n_304 {
+    position: absolute;
+    top: 635px;
+    left: 165px;
+  }
+  
+  #n_203 {
+    position: absolute;
+    top: 635px;
+    left: 1250px;
+  }

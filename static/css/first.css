@@ -1,0 +1,239 @@
+body{
+    background-color:#006583;
+}
+/* 학교 이름 나중에 만들고 옮기기 */
+#div_1{
+    position:absolute;
+    top: 1.9%;
+    left: 8%;
+}
+/* 학교 건물 이름, 스크롤 바 구현 */
+#div_2{
+    float:left;
+    background-color: white;
+    position:absolute;
+    top: 22%;
+    left: 8%;
+    width : 18%;
+    height : 72%;
+    overflow:scroll;
+}
+#div_3{
+    float:left;
+    position:absolute;
+    top: 20.3%;
+    left: 28%;
+}
+#img_1{
+    height :710px;
+    width : 1200px;
+}
+#button_1{
+    background-color: #CFE8F1;
+    border:2px solid #7ABFDA;
+    border-left:3px solid #7ABFDA;
+    border-right:3px solid #7ABFDA;
+    width:100%;
+    height:8%;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* 1-의료과학관 */
+#circle_1{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 140px;
+    height : 140px;
+    position:absolute;
+    top: 64%;
+    left: 46.5%;
+    display:none;
+}
+/* 국제교류관 */
+#circle_2{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 90px;
+    height : 90px;
+    position:absolute;
+    top: 58.5%;
+    left: 48%;
+    display:none;
+}
+/* 자연과학관 */
+#circle_3{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 200px;
+    height : 150px;
+    position:absolute;
+    top: 55.5%;
+    left: 62.6%;
+    display:none;
+}
+/* 아이디자인관 */
+#circle_4{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 90px;
+    height : 90px;
+    position:absolute;
+    top: 58.5%;
+    left: 51.5%;
+    display:none;
+}
+/* 인문과학관 */
+#circle_5{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 120px;
+    height : 120px;
+    position:absolute;
+    top: 57%;
+    left: 83.5%;
+    display:none;
+}
+/* 교육과학관 */
+#circle_6{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 110px;
+    height : 110px;
+    position:absolute;
+    top: 56.5%;
+    left: 45.1%;
+    display:none;
+}
+/* 공학관 */
+#circle_7{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 130px;
+    height : 110px;
+    position:absolute;
+    top: 48%;
+    left: 55%;
+    display:none;
+}
+/* 산학협력관 */
+#circle_8{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 130px;
+    height : 110px;
+    position:absolute;
+    top: 48%;
+    left: 45.6%;
+    display:none;
+}
+/* BRIX관 */
+#circle_9{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 88px;
+    height : 88px;
+    position:absolute;
+    top: 46.1%;
+    left: 40.3%;
+    display:none;
+}
+/* 지역혁신관 */
+#circle_10{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 200px;
+    height : 75px;
+    position:absolute;
+    top: 51.1%;
+    left: 34.3%;
+    display:none;
+}
+/* 실내체육관 */
+#circle_11{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 130px;
+    height : 130px;
+    position:absolute;
+    top: 65.5%;
+    left: 59.5%;
+    display:none;
+}
+/* 학예관 */
+#circle_12{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 130px;
+    height : 110px;
+    position:absolute;
+    top: 39%;
+    left: 42.5%;
+    display:none;
+}
+/* 중앙도서관 */
+#circle_13{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 140px;
+    height : 125px;
+    position:absolute;
+    top: 47.5%;
+    left: 65.6%;
+    display:none;
+}
+/* 멀티미디어관 */
+#circle_14{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 130px;
+    height : 120px;
+    position:absolute;
+    top: 28.6%;
+    left: 44.7%;
+    display:none;
+}
+/* SCH미디어랩스관 */
+#circle_15{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 175px;
+    height : 150px;
+    position:absolute;
+    top: 75.5%;
+    left: 44.4%;
+    display:none;
+}
+/* 향설생활관 */
+#circle_16{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 200px;
+    height : 160px;
+    position:absolute;
+    top: 37%;
+    left: 57.5%;
+    display:none;
+}
+/* 학군단 */
+#circle_17{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 100px;
+    height : 100 x px;
+    position:absolute;
+    top: 73%;
+    left: 53%;
+    display:none;
+}
+/* 유니토피아관 */
+#circle_18{
+    border : 3px solid red;
+    border-radius: 50%;
+    width : 140px;
+    height : 120px;
+    position:absolute;
+    top: 38.3%;
+    left: 48.9%;
+    display:none;
+}

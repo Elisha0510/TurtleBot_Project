@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css')}}" />
+</head>
+<body>
+    <div id='head' >
+      <br>
+      <h1><b>&nbsp;&nbsp;&nbsp;멀티미디어관</b></h1>
+      <br>
+    </div>
+    <div id="leftnull">
+      <p></p>
+    </div>
+    <div id='left' >
+        <table id="table">
+          <tr>
+            <td id="td_6">
+              <p id="floor_6">&nbsp;&nbsp;<b id="b">6F</b> 
+                &nbsp;&nbsp;&nbsp;컴퓨터공학과<img id="mapimg_6" src="{{ url_for('static', filename='/images/map_button.png')}}" /></p>
+            </td>
+          </tr>
+          <tr>
+            <td id="td">
+              <p id="floor">&nbsp;&nbsp;<b id="b">5F</b>
+                &nbsp;&nbsp;&nbsp;컴퓨터소프트웨어공학과<img id="mapimg_5" src="{{ url_for('static', filename='/images/map_button.png')}}" /></p>
+            </td>
+          </tr>
+          <tr>
+            <td id="td">
+              <p id="floor">&nbsp;&nbsp;<b id="b">4F</b>
+                &nbsp;&nbsp;&nbsp;전기공학과<img id="mapimg_4" src="{{ url_for('static', filename='/images/map_button.png')}}" /></p>
+            </td>
+          </tr>
+          <tr>
+            <td id="td">
+              <p id="floor">&nbsp;&nbsp;<b id="b">3F</b>
+                &nbsp;&nbsp;&nbsp;정보통신공학과<img id="mapimg_3" src="{{ url_for('static', filename='/images/map_button.png')}}" /></p>
+            </td>
+          </tr>
+          <tr>
+            <td id="td">
+              <p id="floor">&nbsp;&nbsp;<b id="b">2F</b>
+                &nbsp;&nbsp;&nbsp;전자공학과<img id="mapimg_2" src="{{ url_for('static', filename='/images/map_button.png')}}" /></p>
+            </td>
+          </tr>
+          <tr>
+            <td id="td">
+              <p id="floor">&nbsp;&nbsp;<b id="b">1F</b>
+                &nbsp;&nbsp;&nbsp;전자정보공학과<img id="mapimg_1" src="{{ url_for('static', filename='/images/map_button.png')}}" /></p></td>
+          </tr>
+        </table>
+    </div>
+
+    <div id="right">
+        <div id="rightnull">
+          <p></p>
+        </div>
+        <div id="righthead1">
+          <p>6F</p>
+        </div>
+        <div id="righthead2">
+          <br><br><br>
+          <p>컴퓨터공학과</p>
+          <br>
+        </div>
+        <div>
+          <button id = 'map_b' onclick='window.location.href = "/map"'>층 안내도</button>
+        </div>
+        <div id="div_1">
+          <p id="ti1">&nbsp;학과사무실</p>
+          <table id="t1">
+            <tr>
+              <td id="td1"><p></p></td>
+              <td id="td1"><p></p></td>
+            </tr>
+          </table>
+          <p id="roomnum1">M609</p>
+          <p id="roomname1">041-230-1273</p>
+        </div>
+        <div id="div_2">
+          <p id="ti1">&nbsp;교수님 방</p>
+        </div>
+
+        <div id="div_3">
+          <table>
+            <tr id="t1">
+              <td><p id="td2"></p></td>
+              <td><p id="td2"></p></td>
+            </tr>
+          </table>
+
+          <p id="roomnum2">M601</p>
+          <p id="roomname2">이해각 교수님</p>
+          <p id="roomnum3">M604</p>
+          <p id="roomname3">남윤영 교수님</p>
+        </div>
+        <div id="div_4">
+          <table>
+            <tr id="t1">
+              <td><p id="td2"></p></td>
+              <td><p id="td2"></p></td>
+            </tr>
+          </table>
+          <p id="roomnum4">M605</p>
+          <p id="roomname4">이상정 교수님</p>
+          <p id="roomnum5">M607</p>
+          <p id="roomname5">홍인식 교수님</p>
+        </div>
+        <div id="div_5">
+          <table>
+            <tr>
+              <td><p id="td2"></p></td>
+              <td><p id="td2"></p></td>
+            </tr>
+          </table>
+
+          <p id="roomnum6">M611</p>
+          <p id="roomname6">천인국 교수님</p>
+          <p id="roomnum7">M614</p>
+          <p id="roomname7">하상호 교수님</p>
+        </div>
+
+        <div id="div_6">
+          <p id="ti1">&nbsp;학과 연구실</p>
+        </div>
+
+        <div id="div_7">
+          <table>
+            <tr id="t1">
+              <td><p id="td3"></p></td>
+              <td><p id="td3"></p></td>
+            </tr>
+          </table>
+          <p id="roomnum8">M602</p>
+          <p id="roomname8">Multimedia Lab</p>
+          <p id="roomnum9">M603</p>
+          <p id="roomname9">UC Lab</p>
+        </div>
+        <div id="div_8">
+          <table>
+            <tr id="t1">
+              <td><p id="td3"></p></td>
+              <td><p id="td3"></p></td>
+            </tr>
+          </table>
+
+          <p id="roomnum10">M606</p>
+          <p id="roomname10">CS Lab</p>
+          <p id="roomnum11">M608</p>
+          <p id="roomname11">Embedded&nbsp;System&nbsp;Lab</p>
+        </div>
+        <div id="div_9">
+          <table>
+            <tr>
+              <td><p id="td3"></p></td>
+              <td><p id="td3"></p></td>
+            </tr>
+          </table>
+          <p id="roomnum12">M612</p>
+          <p id="roomname12">Image Processing Lab</p>
+          <p id="roomnum13">M613</p>
+          <p id="roomname13">OOPSLA Lab</p>
+        </div>
+        
+        <div id="div_10">
+          <p id="ti1">&nbsp;강의실</p>
+        </div>
+
+        <div id="div_11">
+          <table>
+            <tr id="t1">
+              <td><p id="td3"></p></td>
+              <td><p id="td3"></p></td>
+            </tr>
+          </table>
+          <p id="roomnum14">M610</p>
+          <p id="roomnum15">M615</p>
+          <p id="roomname15">컴퓨터실</p>
+        </div>
+        <div id="div_12">
+          <table>
+            <tr id="t1">
+              <td><p id="td3"></p></td>
+              <td><p id="td3"></p></td>
+            </tr>
+          </table>
+
+          <p id="roomnum16">M618</p>
+          <p id="roomnum17">M619</p>
+        </div>
+        <div id="div_13">
+          <table>
+            <tr>
+              <td><p id="td3"></p></td>
+              <td><p id="td3"></p></td>
+            </tr>
+          </table>
+          <p id="roomnum18">M620</p>
+          <p id="roomname18">실습실</p>
+        </div>
+
+    </div>
+</body>
+</html>

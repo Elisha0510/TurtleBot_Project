@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floormap</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/map.css')}}" />
+    <script>
+      const method = "POST";
+
+      function callroom(elev) {
+        xhr.open(method, url);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        const xhr = new XMLHttpRequest();
+
+        console.log("UNSENT", xhr.readyState);
+
+        xhr.open("POST", "/api", true);
+        console.log("OPENED", xhr.readyState);
+
+        xhr.onload = function () {
+          console.log("DONE", xhr.readyState);
+        };
+
+        xhr.send("room=" + elev);
+      }
+
+      function call_but(one) {
+        xhr.open(method, url);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-ww-form-unlencoded"
+        );
+        const xhr = new XMLHttpRequest();
+
+        console.log("UNSENT", xhr.readyState);
+
+        xhr.open("POST", "/api", true);
+        console.log("OPENED", xhr.readyState);
+
+        xhr.onload = function () {
+          console.log("DONE", xhr.readyState);
+        };
+
+        xhr.send("room=" + one);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map">
+      <img src="{{ url_for('static', filename='/images/floor_6_map.png')}}" />
+      <button class="button" id="ele" onclick="callroom('1')"></button>
+      <button class="button" id="office" onclick="callroom('609')"></button>
+      <button class="button" id="M610" onclick="callroom('610')"></button>
+      <button class="button" id="M618" onclick="callroom('618')"></button>
+      <button class="button" id="M619" onclick="callroom('619')"></button>
+      <button class="button" id="M620" onclick="callroom('620')"></button>
+      <button class="button1" id="nam" onclick="callroom('604')"></button>
+      <button class="button1" id="lsj" onclick="callroom('605')"></button>
+      <button class="button1" id="his" onclick="callroom('607')"></button>
+
+      <button class="path" id="n_1" onclick="call_btn('1')">1</button>
+      <button class="path" id="n_2" onclick="call_btn('2')">2</button>
+      <button class="path" id="n_3" onclick="call_btn('3')">3</button>
+      <button class="path" id="n_4" onclick="call_btn('4')">4</button>
+      <button class="path" id="n_5" onclick="call_btn('5')">5</button>
+      <button class="path" id="n_6" onclick="call_btn('6')">6</button>
+      <button class="path" id="n_7" onclick="call_btn('7')">7</button>
+      <button class="path" id="n_8" onclick="call_btn('8')">8</button>
+      <button class="path" id="n_9" onclick="call_btn('9')">9</button>
+      <button class="path" id="n_10" onclick="call_btn('10')">10</button>
+      <button class="path" id="n_11" onclick="call_btn('11')">11</button>
+      <button class="path" id="n_12" onclick="call_btn('12')">12</button>
+      <button class="path" id="n_13" onclick="call_btn('13')">13</button>
+      <button class="path" id="n_14" onclick="call_btn('14')">14</button>
+      <button class="path" id="n_401" onclick="call_btn('14')">401</button>
+      <button class="path" id="n_102" onclick="call_btn('14')">102</button>
+      <button class="path" id="n_304" onclick="call_btn('14')">304</button>
+      <button class="path" id="n_203" onclick="call_btn('14')">203</button>
+    </div>
+  </body>
+</html>

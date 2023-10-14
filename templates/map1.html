@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>6층</title>
+		<style>
+			.room_left {
+				width:10em;
+				height:6.75em;
+				position:absolute;
+				border:1px solid black;
+			}
+			
+			.room_top {
+				position:absolute; border:1px solid black;
+			}
+			
+			.room_bottom {
+				width:calc(42.5em / 2); 
+				height:11.25em; 
+				position:absolute; 
+				border:1px solid black;
+			}
+			
+			.room > div {
+				padding-left:5px;
+				padding-top:5px;
+				font-size:0.85em;
+			}
+			
+			.circle {
+				border-radius:50%;
+				width:2em;
+				height:2em;
+				background-color:#c6c6c6;
+				position:absolute;
+			}
+			
+			.circle_top {
+				top:0px;
+			}
+			
+			.circle_bottom {
+				top:16em
+			}
+			
+			.cricle_left {
+				left:0px;
+			}
+			
+			.circle_right {
+				left:38.5em;
+			}
+		</style>
+		<script>
+			function roomEvent(num) {
+				var xhr = new XMLHttpRequest();
+				xhr.open("POST", "/method", true);
+				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				xhr.send("room=" + num);
+			}
+			
+			var i = 0;
+			var depart = 0;
+			var arrive = 0;
+			
+			function nodeClick(num) {
+				if (num == depart) {
+					depart = 0;
+					i = 0;
+					document.getElementById("n" + ("000" + num).slice(-3)).style.background = "#c6c6c6";
+					return;
+				}
+				
+				if (num == arrive) {
+					document.getElementById("n" + ("000" + depart).slice(-3)).style.background = "#c6c6c6";
+					document.getElementById("n" + ("000" + arrive).slice(-3)).style.background = "#c6c6c6";
+					
+					var xhr = new XMLHttpRequest();
+					xhr.open("POST", "/node", true);
+					xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					xhr.send("depart=" + depart + "&arrive=" + arrive);
+					
+					alert("로봇에게 출발 명령을 전달하였습니다.");
+					
+					i = 0;
+					depart = 0;
+					arrive = 0;
+					return;
+				}
+				
+				if (i % 2) { // arrive
+					arrive = num;
+					document.getElementById("n" + ("000" + num).slice(-3)).style.background = "red";
+				} else { // depart
+					depart = num;
+					document.getElementById("n" + ("000" + num).slice(-3)).style.background = "blue";
+				}
+				i ++;
+			}
+		</script>
+	</head>
+	<body>
+		<div style="position:absolute; top:5px; left:5px">
+			<div onclick="roomEvent(608)" class="room_left room"><div>홍인식 교수님<br>사무실</div></div>
+			<div onclick="roomEvent(607)" class="room_left room" style="border-top:none; top:6.75em"><div>임베디드Lab</div></div>
+			<div onclick="roomEvent(606)" class="room_left room" style="border-top:none; top:calc(6.75em * 2)"><div>CSLab</div></div>
+			<div onclick="roomEvent(605)" class="room_left room" style="border-top:none; top:calc(6.75em * 3)"><div>이상정 교수님<br>사무실</div></div>
+			<div onclick="roomEvent(604)" class="room_left room" style="border-top:none; top:calc(6.75em * 4)"><div>남윤영 교수님<br>사무실</div></div>
+		</div>
+		<div style="position:absolute; top:5px; left:calc(9em + 10.865em - 7px)">
+			<div onclick="roomEvent(600)" class="room_top room" style="width:11em; height:calc(11.25em - 1px);"><div>엘레베이터</div></div>
+			<div onclick="roomEvent(609)" class="room_top room" style="width:8em; height:calc(11.25em - 1px); left:calc(11em + 1px)"><div>학과 사무실</div></div>
+			<div onclick="roomEvent(610)" class="room_top room" style="width:28.4em; height:calc(11.25em - 1px); left:calc(11em + 8em + 2px)"><div>M610 강의실</div></div>
+		</div>
+		<div style="position:absolute; top:calc(33.75em + 6px); left:calc(10em + 9em + 7px);">
+			<div onclick="roomEvent(620)" class="room_bottom room"><div>M620 실습실</div></div>
+			<div onclick="roomEvent(619)" class="room_bottom room" style="border-left:none; left:calc(42.5em / 2)"><div>M619 강의실</div></div>
+			<div onclick="roomEvent(618)" class="room_bottom room" style="border-left:none; left:calc(42.5em)"><div>M618 강의실</div></div>
+		</div>
+		<div style="position:absolute; top:5px; left:calc(10em + 6px);">
+			<div style="display:inline-block; border:1px solid black; width:9em; height:33.75em; position:absolute; top:0px; left:0px"></div>
+			<div style="display:inline-block; border:1px solid black; border-left:1px solid white; width:47.5em; height:22.5em; position:absolute; top:11.25em; left:calc(9em + 1px);">
+				<div style="display:inline-block; outline:1px solid black; width:30em; height:10em; margin-left:10.875em; margin-top:6.25em"></div>
+			</div>
+		</div>
+		<div style="position:absolute; top:calc(11.25em + 3em); left:calc(9em + 11em + 4em);">
+			<div id="n401" onclick="nodeClick(401)" class="circle circle_top" style="left:0px;"></div>
+			<div id="n001" onclick="nodeClick(1)" class="circle circle_top" style="left:calc(38.5em / 5)"></div>
+			<div id="n002" onclick="nodeClick(2)" class="circle circle_top" style="left:calc(38.5em / 5 * 2)"></div>
+			<div id="n003" onclick="nodeClick(3)" class="circle circle_top" style="left:calc(38.5em / 5 * 3)"></div>
+			<div id="n004" onclick="nodeClick(4)" class="circle circle_top" style="left:calc(38.5em / 5 * 4)"></div>
+			<div id="n102" onclick="nodeClick(102)" class="circle circle_top" style="left:38.5em"></div>
+			
+			<div id="n005" onclick="nodeClick(5)" class="circle circle_left" style="top:calc(16em / 4 * 1)"></div>
+			<div id="n006" onclick="nodeClick(6)" class="circle circle_left" style="top:calc(16em / 4 * 2)"></div>
+			<div id="n007" onclick="nodeClick(7)" class="circle circle_left" style="top:calc(16em / 4 * 3)"></div>
+			
+			<div id="n304" onclick="nodeClick(304)" class="circle circle_bottom" style="left:0px;"></div>
+			<div id="n011" onclick="nodeClick(11)" class="circle circle_bottom" style="left:calc(38.5em / 5)"></div>
+			<div id="n010" onclick="nodeClick(10)" class="circle circle_bottom" style="left:calc(38.5em / 5 * 2)"></div>
+			<div id="n009" onclick="nodeClick(9)" class="circle circle_bottom" style="left:calc(38.5em / 5 * 3)"></div>
+			<div id="n008" onclick="nodeClick(8)" class="circle circle_bottom" style="left:calc(38.5em / 5 * 4)"></div>
+			<div id="n203" onclick="nodeClick(203)" class="circle circle_bottom" style="left:38.5em"></div>
+			
+			<div id="n014" onclick="nodeClick(14)" class="circle circle_right" style="top:calc(16em / 4 * 1)"></div>
+			<div id="n013" onclick="nodeClick(13)" class="circle circle_right" style="top:calc(16em / 4 * 2)"></div>
+			<div id="n012" onclick="nodeClick(12)" class="circle circle_right" style="top:calc(16em / 4 * 3)"></div>
+		</div>
+		
+	</body>
+</html>

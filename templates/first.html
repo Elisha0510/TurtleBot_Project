@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/first.css')}}" />
+    <script src="{{url_for('static', filename='js/first.js')}}"></script>
+</head>
+<body>
+    <!-- 타이틀 -->
+    <div id="div_1">
+        <img src="{{ url_for('static', filename='/images/uni_name.png')}}" />
+    </div>
+    <!-- 버튼 스크롤바 구현 -->
+    <div id="div_2">
+       <button id="button_1" onclick="c_1(1)">1 - 의료과학관</button>
+       <button id="button_1" onclick="c_1(2)">2 - 국제교류관</button>
+       <button id="button_1" onclick="c_1(3)">3 - 자연과학관</button>
+       <button id="button_1" onclick="c_1(4)">5 - I'Design관</button>
+       <button id="button_1" onclick="c_1(5)">6 - 인문과학관</button>
+       <button id="button_1" onclick="c_1(6)">7 - 교육과학관</button>
+       <button id="button_1" onclick="c_1(7)">9 - 공과대학</button>
+       <button id="button_1" onclick="c_1(8)">B - 산학협력관</button>
+       <button id="button_1" onclick="c_1(9)">BI - BRIX관</button>
+       <button id="button_1" onclick="c_1(10)">C - 지역혁신관</button>
+       <button id="button_1" onclick="c_1(11)">G - 실내체육관</button>
+       <button id="button_1" onclick="c_1(12)">H - 학예관</button>
+       <button id="button_1" onclick="c_1(13)">L - 중앙도서관</button>
+       <button id="button_1" onclick="c_1(14)">M - 멀티미디어관</button>
+       <button id="button_1" onclick="c_1(15)">ML - SCH미디어랩스관</button>
+       <button id="button_1" onclick="c_1(16)">RC - 향설생활관(1관)</button>
+       <button id="button_1" onclick="c_1(17)">R - 학군단</button>
+       <button id="button_1" onclick="c_1(18)">U - 유니토피아관</button>
+    </div>
+    <div id="div_3">
+        <img id="img_1" src="{{ url_for('static', filename='/images/uni_img.png')}}" />
+    </div>
+    <div id="circle_1"> </div>
+    <div id="circle_2"> </div>
+    <div id="circle_3"> </div>
+    <div id="circle_4"> </div>
+    <div id="circle_5"> </div>
+    <div id="circle_6"> </div>
+    <div id="circle_7"> </div>
+    <div id="circle_8"> </div>
+    <div id="circle_9"> </div>
+    <div id="circle_10"> </div>
+    <div id="circle_11"> </div>
+    <div id="circle_12"> </div>
+    <div id="circle_13"> </div>
+    <div id="circle_14" onclick='window.location.href = "/6_floor"'> </div>
+    <div id="circle_15"> </div>
+    <div id="circle_16"> </div>
+    <div id="circle_17"> </div>
+    <div id="circle_18"> </div>
+
+</body>
+</html>

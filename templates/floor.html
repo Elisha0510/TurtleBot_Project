@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" />
+  </head>
+  <body>
+    <div>
+      <!--wrpper-->
+      <div id="head">
+        <h4>MultiMedia View</h4>
+      </div>
+
+      <div id="left">
+        <ul>
+          <li>6F &nbsp;&nbsp;&nbsp;컴퓨터공학과</li>
+          <li>5F &nbsp;&nbsp;&nbsp;컴퓨터소프트웨어공학과</li>
+          <li>4F &nbsp;&nbsp;&nbsp;전기공학과</li>
+          <li>3F &nbsp;&nbsp;&nbsp;정보통신공학과</li>
+          <li>2F &nbsp;&nbsp;&nbsp;전자공학과</li>
+          <li>1F &nbsp;&nbsp;&nbsp;전자정보공학과</li>
+        </ul>
+      </div>
+
+      <div id="right">
+        <div id="title">
+          <div>
+            <h2>6F<sub>컴퓨터공학과</sub></h2>
+            <button onclick='window.location.href = "/map"'>층 안내도</button>
+          </div>
+        </div>
+
+        <div id="lecture">
+          <h5>강의실>></h5>
+        </div>
+
+        <div class="room">
+          <div id="r1">
+            <p>학과사무실</p>
+            <p>lab</p>
+            <p>학생 휴게공간</p>
+            <p>M610</p>
+            <p>M618</p>
+            <p>M619</p>
+            <p>M620</p>
+            <p>이해각 교수실</p>
+            <p>이교수님 랩</p>
+            <p>남윤영 교수실</p>
+          </div>
+
+          <div id="r2">
+            <p>UC lab</p>
+            <p>이상정 교수실</p>
+            <p>CS lab</p>
+            <p>홍인식 교수실</p>
+            <t>홍교수님 랩</t>
+            <p>천인국 교수실</p>
+            <p>천인국 교수님랩</p>
+            <p>하상호 교수실</p>
+            <p>oopsla</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
